@@ -1,5 +1,9 @@
+// ignore_for_file: prefer_const_literals_to_create_immutables, prefer_const_constructors
+
 import 'package:flutter/material.dart';
 import 'package:flutter_crud/provider/users.dart';
+import 'package:flutter_crud/routes/app_routes.dart';
+import 'package:flutter_crud/views/user_form.dart';
 import 'package:flutter_crud/views/user_list.dart';
 import 'package:provider/provider.dart';
 
@@ -16,12 +20,14 @@ class MyApp extends StatelessWidget {
     return MultiProvider(
         providers: [ChangeNotifierProvider(create: (ctx) => Users())],
         child: MaterialApp(
-          title: 'Flutter Demo',
-          theme: ThemeData(
-            primarySwatch: Colors.blue,
-          ),
-          home: UserList(),
-          debugShowCheckedModeBanner: false,
-        ));
+            title: 'Flutter Demo',
+            theme: ThemeData(
+              primarySwatch: Colors.blue,
+            ),
+            debugShowCheckedModeBanner: false,
+            routes: {
+              AppRoutes.HOME: (_) => UserList(),
+              AppRoutes.USER_FORM: (_) => UserForm()
+            }));
   }
 }

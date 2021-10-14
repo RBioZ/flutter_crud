@@ -1,16 +1,17 @@
-# flutter_crud
+# Flutter Crud
 
-A new Flutter project.
+<p align="center">
+  <img alt="PicPay" title="#delicinha" src=".github/capture.png" width="200px" />
+</P
 
-## Getting Started
+Este é o repositório com o código fonte desenvolvido durante as aulas disponíveis no [YouTube](https://www.youtube.com/watch?v=ViahqKZzZ7Y&t=4193s&ab_channel=Cod3rCursos) onde criamos um app crud com Flutter.
 
-This project is a starting point for a Flutter application.
+Este projeto utiliza o [Flutter](https://flutter.dev).
 
-A few resources to get you started if this is your first Flutter project:
+## Instalação
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+```sh
+  $ git clone https://github.com/RBioZ/flutter-crud
+```
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Depois disso acesse a pasta que você deseja e execute o projeto
